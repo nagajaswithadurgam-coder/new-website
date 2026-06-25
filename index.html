@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        background-color: #f4f7f6;
+        color: #333;
+        line-height: 1.6;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10%;
+        background: #ffffff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+      }
+      .navbar .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #007bff;
+      }
+      .logo i {
+        color: #007bff;
+        margin-right: 10px;
+        font-size: 22px;
+      }
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+      .nav-links li {
+        margin-left: 20px;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+      }
+      .hero {
+        padding: 100px 10%;
+        text-align: center;
+        background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      }
+      .hero h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+      .highlight {
+        color: #007bff;
+      }
+      .hero p {
+        font-size: 18px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .skills-section {
+        padding: 60px 10%;
+        text-align: center;
+      }
+      .skills-section h2 {
+        margin-bottom: 30px;
+      }
+      .skills-grid {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .skill-card {
+        background: #fff;
+        padding: 15px 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        font-weight: bold;
+        color: #555;
+      }
+      .footer {
+        background: #222;
+        color: #fff;
+        text-align: center;
+        padding: 40px 10%;
+      }
+      .footer h2 {
+        margin-bottom: 15px;
+      }
+      .social-links {
+        margin: 20px 0;
+      }
+      .social-links a {
+        color: #007bff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+      .copyright {
+        font-size: 14px;
+        color: #777;
+        margin-top: 20px;
+      }
+      @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          padding: 15px;
+        }
+        .nav-links {
+          margin-top: 15px;
+        }
+        .nav-links li {
+          margin: 0 10px;
+        }
+        .hero h1 {
+          font-size: 30px;
+        }
+        .hero p {
+          font-size: 16px;
+        }
+        .skills-grid {
+          flex-direction: column;
+          align-items: center;
+        }
+        .skill-card {
+          width: 100%;
+          max-width: 250px;
+        }
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        padding: 5px 10px;
+        transition: all 0.3s ease;
+      }
+      .nav-links a:hover {
+        color: #007bff;
+        background-color: rgba(0, 123, 255, 0.1);
+        border-radius: 4px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .nav-links li:last-child a {
+        background-color: #007bff;
+        color: white;
+        border-radius: 20px;
+        padding: 8px 18px;
+      }
+      .nav-links li:last-child a:hover {
+        background-color: #0056b3;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo"><i class="fa-solid fa-code"></i> MyPortfolio</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="about" class="hero">
+      <h1>Hi, I'm <span class="highlight">Naga Jaswitha</span></h1>
+      <p>
+        I am a 2nd year B.Tech student passionate about web development.
+        Currently learning HTML and CSS to build creative and responsive
+        websites.
+      </p>
+    </section>
+    <section id="skills" class="skills-section">
+      <h2>My Skills & Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">VS Code</div>
+      </div>
+    </section>
+    <footer id="contact" class="footer">
+      <h2>Connect With Me</h2>
+      <p>Feel free to reach out for collaborations or just a tech chat!</p>
+      <div class="social-links">
+        <a href="mailto:nagajaswithadurgam@gmail.com">Email</a>
+        <a
+          href="https://www.linkedin.com/in/nagajaswitha-durgam-257313379"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/nagajaswithadurgam-coder"
+          target="_blank"
+          rel="noopener"
+          >GitHub</a
+        >
+      </div>
+      <p class="copyright">&copy; 2026 | Built by a B.Tech Student</p>
+    </footer>
+  </body>
+</html>
